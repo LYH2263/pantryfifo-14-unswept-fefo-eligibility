@@ -17,8 +17,10 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue'
-import { api } from './api'
-const alerts = ref([])
-onMounted(async () => { try { alerts.value = await api('/alerts') } catch { alerts.value = [] } })
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { alerts, refreshAlerts } from './alerts'
+const route = useRoute()
+onMounted(refreshAlerts)
+watch(() => route.fullPath, refreshAlerts)
 </script>

@@ -29,3 +29,10 @@ h1,h2 { font-family: "Space Grotesk", sans-serif; }
 button { background: var(--teal); color: #fff; border: 0; border-radius: 10px; padding: 8px 12px; font: inherit; cursor: pointer; }
 input, select { padding: 8px; border-radius: 8px; border: 1px solid var(--line); font: inherit; margin: 4px 0 10px; width: 100%; max-width: 320px; }
 .muted { color: #5a7a7e; font-size: 13px; }
+.badge-expired {
+  background: var(--alert); color: #fff; border-radius: 6px; padding: 1px 6px;
+  font-size: 12px; font-style: normal; margin-left: 6px;
+}
+.tag-hit { color: var(--teal); font-size: 12px; font-style: normal; margin-left: 6px; }
+.tag-miss { color: var(--alert); font-size: 12px; font-style: normal; margin-left: 6px; }
+pre.err { color: var(--alert); white-space: pre-wrap; }
