@@ -29,3 +29,33 @@ h1,h2 { font-family: "Space Grotesk", sans-serif; }
 button { background: var(--teal); color: #fff; border: 0; border-radius: 10px; padding: 8px 12px; font: inherit; cursor: pointer; }
 input, select { padding: 8px; border-radius: 8px; border: 1px solid var(--line); font: inherit; margin: 4px 0 10px; width: 100%; max-width: 320px; }
 .muted { color: #5a7a7e; font-size: 13px; }
+.alert-urgent { background: #ffd9b8; color: #a24410; border-bottom-color: #f0b07a; }
+.alert-expired { background: #f3d9d9; color: #8c2f2f; border-bottom-color: #e0acac; }
+.alert-dirty { background: #e6e6e6; color: #555; border-bottom-color: #ccc; }
+.alert-note { font-size: 12px; opacity: .85; }
+.lot { vertical-align: top; line-height: 1.7; }
+.lot-expired { border-color: #d79a9a; background: #fdf3f3; }
+.lot-dirty { border-color: #bbb; background: #f0f0f0; color: #777; border-style: dashed; }
+.lot-off { opacity: .55; }
+.lot-fresh { border-color: var(--line); }
+.lot-remain { font-size: 12px; color: var(--teal); }
+.tag {
+  display: inline-block; font-size: 11px; border-radius: 999px; padding: 1px 8px;
+  margin: 0 2px; border: 1px solid transparent;
+}
+.tag-fresh { background: #dff0e4; color: #256b3a; border-color: #b6dcc2; }
+.tag-expired { background: #f3d9d9; color: #8c2f2f; border-color: #e0acac; }
+.tag-dirty { background: #dcdcdc; color: #555; border-color: #c4c4c4; }
+.tag-off { background: #ececec; color: #777; }
+.tag-hit { background: var(--teal); color: #fff; }
+.tag-hit-expired { background: #8c2f2f; color: #fff; }
+.tag-miss { background: #fff; color: #888; border-color: #ccc; }
+.tag-plan { background: #fff4d6; color: #8a6d1a; border-color: #e3cd86; }
+.shelf-qty { font-size: 12px; color: var(--teal); font-weight: 400; margin-left: 6px; }
+.box { border-radius: 12px; padding: 10px 14px; margin: 10px 0; display: flex; gap: 14px; align-items: baseline; }
+.box-ok { background: #dff0e4; border: 1px solid #b6dcc2; color: #256b3a; }
+.box-short { background: #fdeede; border: 1px solid #ecc48f; color: #8a5a16; }
+.layers { display: flex; flex-wrap: wrap; gap: 8px; }
+.layer-chip {
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 13px;
+}
